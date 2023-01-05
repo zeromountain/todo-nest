@@ -16,7 +16,7 @@ export class TodoService {
 
   getTodoList() {
     return this.todo.find({
-      select: ['todo', 'completed', 'createdAt'],
+      select: ['id', 'todo', 'completed', 'createdAt'],
       order: { createdAt: -1 },
     });
   }
